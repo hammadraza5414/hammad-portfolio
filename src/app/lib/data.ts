@@ -28,47 +28,98 @@ export const PROCESS = [
 ];
 
 export const SKILL_GROUPS = [
-  { title: "Core Competencies",     subtitle: "The stack I reach for daily",             items: ["React", "Next.js", "TypeScript", "Node.js", "Python", "PostgreSQL", "Tailwind", "REST / GraphQL"] },
-  { title: "Tools & Automation",    subtitle: "Lead gen, CRM, and outbound systems",     items: ["GoHighLevel", "Apollo", "Clay", "Instantly", "Zapier", "n8n", "Make", "Airtable"] },
-  { title: "Analytics & Workflows", subtitle: "From dashboards to end-to-end flows",     items: ["GA4", "Mixpanel", "Metabase", "Notion", "Linear", "Figma", "Vercel", "AWS"] },
+  {
+    title: "Marketing Systems",
+    subtitle: "The core stack I ship with",
+    items: ["GoHighLevel", "Funnels", "CRM Pipelines", "Automations", "Landing Pages", "SMS / Email Nurture"],
+  },
+  {
+    title: "Cold Email & Deliverability",
+    subtitle: "Getting the inbox, not the spam folder",
+    items: ["Instantly", "Domain Warm-up", "Inbox Rotation", "Deliverability Audits", "DNS / SPF / DKIM"],
+  },
+  {
+    title: "Prospecting & Enrichment",
+    subtitle: "Real-time lead sourcing at scale",
+    items: ["Apollo", "Clay", "Dripify", "LinkedIn Sales Navigator", "DeBounce", "PropStream"],
+  },
 ];
 
-export const SOFT_SKILLS = ["Leadership", "Problem Solving", "Communication", "Time Management", "Strategy", "Ownership"];
+export const SOFT_SKILLS = ["Leadership", "Problem Solving", "Communication", "Time Management", "Systems Thinking", "Ownership"];
 
+// PROJECTS — real work, no fabricated metrics.
+// Each project has an `image` path pointing to /public/projects/*.png
 export const PROJECTS = [
-  { title: "Federal Benefits Funnel",       tags: ["B2B Lead Gen", "GoHighLevel", "Automation"], desc: "End-to-end GHL funnel and CRM for a US federal employee benefits practice — calendar, pipelines, SMS/email nurture.", metrics: [["+312%", "booked calls"], ["4.1×", "ROAS"], ["<2m", "lead SLA"]] as const },
-  { title: "Outbound Deliverability Stack", tags: ["Cold Email", "Infrastructure", "Apollo/Clay"], desc: "Domain warm-up, inbox rotation, and enriched targeting pipeline delivering consistently to primary inbox at scale.", metrics: [["92%", "inbox rate"], ["18%", "reply rate"], ["150k+", "sends / mo"]] as const },
-  { title: "Portfolio Studio v3",           tags: ["Web Dev", "Next.js", "Framer Motion"],       desc: "A composable component library and case-study framework used across three client micro-sites.", metrics: [["98", "Lighthouse"], ["1.2s", "LCP"], ["3", "live sites"]] as const },
-];
+  {
+    title: "GHL Funnel",
+    tags: ["GoHighLevel", "Funnel Build", "Lead Capture"],
+    desc: "Multi-step lead-capture funnel inside GoHighLevel — opt-in, qualification checklist, calendar booking, thank-you, terms and privacy pages — all wired into a single conversion path.",
+    image: "/projects/ghl_funnel.png",
+    highlights: ["Opt-in → Checklist → Booking flow", "Split-test ready", "End-to-end tracking"],
+  },
+  {
+    title: "GHL Website",
+    tags: ["GoHighLevel", "Website Build", "Multi-page"],
+    desc: "Full multi-page website built natively inside GoHighLevel — home, strategy session, workshop, about, and legal pages — designed to feed leads directly into the CRM and funnel system.",
+    image: "/projects/ghl_website.png",
+    highlights: ["6 pages, one system", "CRM-integrated forms", "GHL-native, no external stack"],
+  },
+  {
+    title: "GHL Workflow",
+    tags: ["GoHighLevel", "Automation", "Multi-Channel"],
+    desc: "Multi-channel reply-capture workflow that routes DMs from Facebook, Instagram, TikTok, SMS, and email into a unified pipeline — with tagging, opportunity creation, and appointment booking automated end-to-end.",
+    image: "/projects/ghl_workflow.png",
+    highlights: ["5 channels, one workflow", "Auto-tag + opportunity creation", "Booking + follow-up branches"],
+  },
+  {
+    title: "Cold Email Campaign",
+    tags: ["Instantly", "Deliverability", "B2B Outreach"],
+    desc: "Cold email campaign built and managed in Instantly — from list warm-up through sequenced outreach — delivering consistently to the primary inbox at scale.",
+    image: "/projects/instantly_analytics.png",
+    highlights: [
+      ["60.59%", "open rate"],
+      ["2,842", "sequences started"],
+      ["1,722", "unique opens"],
+    ] as const,
+  },
+] as const;
 
+// EXPERIENCE — no dates, ordered chronologically most-recent first
 export const EXPERIENCE = [
   {
     role: "Chief Marketing Officer",
     org: "Roxyel — Systems & Deliverability",
-    date: "2024 — Present",
     bullets: [
       "Own the GTM engine — brand, content, prospecting, and inbound conversion.",
-      "Built out the outbound stack (Apollo → Clay → Instantly → GHL) from zero.",
-      "Grew LinkedIn presence from cold start to consistent weekly impressions and inbound DMs.",
+      "Built and manage the outbound stack: Apollo and Clay for enrichment, Instantly for cold email delivery, GoHighLevel for CRM and nurture.",
+      "Lead the LinkedIn presence — content pillars, cadence, and outreach strategy — driving inbound conversations from a cold start.",
     ],
   },
   {
-    role: "Founding Engineer / Ops",
-    org: "Independent Consulting",
-    date: "2022 — 2024",
+    role: "Senior Marketing Strategist",
+    org: "Roxyel — Systems & Deliverability",
     bullets: [
-      "Designed GHL funnels and automations for benefits, coaching, and agency clients.",
-      "Shipped internal tools and scraping pipelines for lead enrichment.",
-      "Advised founders on the first hire, first funnel, and first 100 conversations.",
+      "Designed and shipped GHL funnels, websites, and automation workflows for agency and service-business clients.",
+      "Ran deliverability audits and rebuilt cold email infrastructure — domains, warm-up, inbox rotation, and DNS setup.",
+      "Managed campaign reporting, lead sanitization, and end-to-end data workflows for high-volume outreach.",
     ],
   },
   {
-    role: "Freelance Developer",
-    org: "Various",
-    date: "2020 — 2022",
+    role: "Freelance B2B Lead Generation & Deliverability",
+    org: "Independent — International Clients",
     bullets: [
-      "Built marketing sites, dashboards, and integrations across the JS ecosystem.",
-      "Set up analytics, CRMs, and email systems for small teams.",
+      "Executed cold email and outbound campaigns for clients across SaaS, financial services, real estate, and sustainable packaging.",
+      "Configured complex GoHighLevel architectures — smart lists, pipelines, merge-tag fixes, and deliverability troubleshooting.",
+      "Built B2B prospecting pipelines using Apollo, Clay, Dripify, and PropStream — targeting fractional executives, financial advisors, and international buyers.",
+    ],
+  },
+  {
+    role: "Founder",
+    org: "UniHelpDesk — Academic Support Platform",
+    bullets: [
+      "Founded and launched an academic support web platform for university students — assignments, resumes, and presentations.",
+      "Built the full digital stack: site copy, Google Analytics integration, SEO, marketing assets, and content workflow.",
+      "Managed the end-to-end operation — from acquisition to delivery — while learning the systems that later became the day job.",
     ],
   },
 ];
