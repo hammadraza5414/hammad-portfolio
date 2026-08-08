@@ -13,6 +13,8 @@ type FormState = {
 
 const EMPTY: FormState = { firstName: "", lastName: "", email: "", message: "", consent: false };
 
+const CONTACT_EMAIL = "hammadraza.upwork@gmail.com";
+
 export default function Contact() {
   const [form, setForm] = useState<FormState>(EMPTY);
   const [sent, setSent] = useState(false);
@@ -114,7 +116,7 @@ export default function Contact() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div className="flex items-center gap-3 text-sm text-neutral-400">
                 <Icon path={Icons.mail} className="w-4 h-4 text-crimson" />
-                <a href="mailto:hello@roxyel.com" className="hover:text-white transition-colors">hello@roxyel.com</a>
+                <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-white transition-colors">{CONTACT_EMAIL}</a>
               </div>
               <button
                 type="submit"
