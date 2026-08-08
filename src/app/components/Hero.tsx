@@ -61,7 +61,11 @@ export default function Hero() {
             </a>
           </motion.div>
           <motion.div variants={fadeUp} className="grid grid-cols-3 gap-6 mt-14 max-w-lg">
-            {([["4+", "Years shipping"], ["30+", "Client systems"], ["92%", "Inbox delivery"]] as const).map(([n, l]) => (
+            {([
+              ["60%", "Cold email open rate"],
+              ["5", "Channels in one workflow"],
+              ["End-to-end", "Systems shipped"],
+            ] as const).map(([n, l]) => (
               <div key={l}>
                 <div className="text-3xl font-extrabold tighter">{n}</div>
                 <div className="text-xs uppercase tracking-widest text-neutral-500 mt-1">{l}</div>
