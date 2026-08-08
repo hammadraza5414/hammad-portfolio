@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { background: #050505; color: #fff; -webkit-font-smoothing: antialiased; }
+
+.noise-bg {
+  background-image:
+    radial-gradient(1200px 600px at 80% -10%, rgba(255,46,46,0.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 20%, rgba(255,46,46,0.06), transparent 60%);
+}
+.grid-lines {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.tight { letter-spacing: -0.03em; }
+.tighter { letter-spacing: -0.045em; }
+::selection { background: #FF2E2E; color: #fff; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0A0A0A; }
+::-webkit-scrollbar-thumb { background: #262626; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #FF2E2E; }
+@keyframes wave { 0%, 100% { transform: scaleY(0.3); } 50% { transform: scaleY(1); } }
+.wave-bar { transform-origin: center; animation: wave 1s ease-in-out infinite; }
