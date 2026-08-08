@@ -78,29 +78,18 @@ export default function Hero() {
         >
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-neutral-800 bg-neutral-900">
             <div className="absolute inset-0">
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "radial-gradient(circle at 30% 30%, rgba(255,46,46,0.6), transparent 55%), radial-gradient(circle at 70% 80%, rgba(255,46,46,0.35), transparent 60%), #0a0a0a",
-                }}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/portrait.jpg"
+                alt="Hammad Raza"
+                className="absolute inset-0 w-full h-full object-cover"
               />
-              <svg viewBox="0 0 400 500" className="absolute inset-0 w-full h-full opacity-70" preserveAspectRatio="xMidYMid slice">
-                <defs>
-                  <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#FF2E2E" stopOpacity="0.9" />
-                    <stop offset="100%" stopColor="#050505" stopOpacity="1" />
-                  </linearGradient>
-                </defs>
-                <ellipse cx="200" cy="180" rx="85" ry="95" fill="url(#g1)" />
-                <path d="M60 500 C 60 340, 140 280, 200 280 C 260 280, 340 340, 340 500 Z" fill="url(#g1)" />
-              </svg>
-              <div className="absolute inset-0 grid-lines opacity-40" />
-              <div className="absolute top-5 left-5 bg-obsidian/70 backdrop-blur border border-neutral-800 rounded-full px-3 py-1.5 flex items-center gap-2">
+              <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent opacity-80 pointer-events-none" />
+              <div className="absolute top-5 left-5 bg-obsidian/70 backdrop-blur border border-neutral-800 rounded-full px-3 py-1.5 flex items-center gap-2 z-10">
                 <span className="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.6)] animate-pulse" />
                 <span className="text-xs font-medium text-neutral-300">Karachi, PK</span>
               </div>
-              <div className="absolute bottom-0 inset-x-0 p-5">
+              <div className="absolute bottom-0 inset-x-0 p-5 z-10">
                 <div className="flex items-end justify-between mb-4">
                   <div>
                     <div className="text-xs uppercase tracking-widest text-neutral-400">Currently</div>
