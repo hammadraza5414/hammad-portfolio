@@ -87,7 +87,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent opacity-80 pointer-events-none" />
               <div className="absolute top-5 left-5 bg-obsidian/70 backdrop-blur border border-neutral-800 rounded-full px-3 py-1.5 flex items-center gap-2 z-10">
                 <span className="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.6)] animate-pulse" />
-                <span className="text-xs font-medium text-neutral-300">Karachi, PK</span>
+                <span className="text-xs font-medium text-neutral-300">Multan, PK</span>
               </div>
               <div className="absolute bottom-0 inset-x-0 p-5 z-10">
                 <div className="flex items-end justify-between mb-4">
