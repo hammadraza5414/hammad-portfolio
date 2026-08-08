@@ -27,9 +27,8 @@ export default function Experience() {
                       right ? "lg:ml-8 lg:col-start-2" : "lg:mr-8 lg:text-right"
                     }`}
                   >
-                    <div className="text-xs uppercase tracking-widest text-crimson mb-2 font-semibold">{exp.date}</div>
                     <h3 className="text-xl font-bold tighter">{exp.role}</h3>
-                    <div className="text-sm text-neutral-400 mb-4">{exp.org}</div>
+                    <div className="text-sm text-crimson mb-4 font-medium">{exp.org}</div>
                     <ul className="space-y-2 text-sm text-neutral-300">
                       {exp.bullets.map((b, k) => (
                         <li key={k} className={`flex gap-2 leading-relaxed ${right ? "" : "lg:flex-row-reverse"}`}>
