@@ -71,3 +71,41 @@ input,textarea {background:#fffdf8!important;color:var(--ink)!important;border-c
 ::-webkit-scrollbar-track {background:var(--paper);}
 ::-webkit-scrollbar-thumb {background:#b7c0ac;}
 @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto;} *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
+
+
+/* Final editorial refinement */
+:root {--paper:#f8f7f2;--ink:#232b26;--olive:#617560;--line:#d9ddd2;}
+body {font-feature-settings:"kern"; }
+#home {padding-top:10rem; padding-bottom:7rem;}
+#home h1 {font-size:clamp(4.1rem,8vw,8.4rem)!important;max-width:900px;}
+#home h1 .text-crimson {color:#728a6a!important;}
+#home p {max-width:37rem;}
+#home .rounded-3xl {filter:saturate(.82);}
+#home .rounded-full {box-shadow:none!important;}
+#home .bg-crimson:hover, header .bg-crimson:hover {background:#455b45!important;}
+#skills .grid, #projects .grid {row-gap:1.4rem;}
+#projects img {filter:saturate(.85);}
+#projects article {background:#fffefb!important;}
+#about h2,#skills h2,#projects h2,#experience h2,#contact h2 {max-width:890px;}
+#about .grid > div,#skills .grid > div {background:#ffffffaa!important;}
+#experience .space-y-12 {gap:1.7rem;}
+#contact form {background:#fffdf8!important;}
+#contact .text-center {color:var(--ink);}
+section[id] {position:relative;}
+section[id]:not(#home):not(#growth):after {content:"";position:absolute;bottom:0;left:5%;right:5%;height:1px;background:#dfe2d9;pointer-events:none;}
+#growth {background:#eeeee7!important;}
+#growth h2 {font-size:clamp(3.4rem,6.3vw,7rem)!important;}
+#growth article {transition:border-color .3s,transform .3s,box-shadow .3s;box-shadow:0 10px 25px rgba(39,47,37,.04);}
+#growth article:hover {box-shadow:0 20px 46px rgba(39,47,37,.085);}
+#growth .rounded-xl {border-radius:3px!important;}
+#growth [class*="text-white/50"] {color:#ddd!important;}
+#growth .text-neutral-500 {color:#69736b!important;}
+#growth [class*="text-\\[\\#B5CDA0\\]"] {color:#526b54!important;}
+@media(max-width:768px) {
+ #home {padding-top:8rem;}
+ #home h1 {font-size:clamp(3.5rem,11vw,5rem)!important;}
+ #growth h2 {font-size:clamp(3.1rem,11vw,5.2rem)!important;}
+ #home .grid-cols-3 {gap:12px;}
+ #home .text-3xl {font-size:1.4rem!important;}
+ #experience .lg\\:text-right {text-align:left!important;}
+}
