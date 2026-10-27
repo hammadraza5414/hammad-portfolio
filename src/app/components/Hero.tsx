@@ -5,7 +5,7 @@ import { Icon, SectionLabel } from "./ui";
 import { Icons, fadeUp, stagger } from "../lib/data";
 import AudioCard from "./AudioCard";
 
-const roles = ["Full-Stack Developer", "Systems & Deliverability", "Automation Engineer", "CMO @ Roxyel"];
+const roles = ["Digital Marketing Strategist", "Paid Media & Search", "Growth Systems & Automation", "WordPress & Web Development"];
 
 export default function Hero() {
   const [i, setI] = useState(0);
@@ -41,7 +41,7 @@ export default function Hero() {
             </AnimatePresence>
           </motion.div>
           <motion.p variants={fadeUp} className="text-neutral-400 text-lg max-w-xl mb-10 leading-relaxed">
-            I design and ship the boring-but-critical layer between marketing intent and revenue — funnels, automations, and outbound systems that actually deliver.
+            I connect paid advertising, search strategy, websites, CRM automation, and B2B outreach into practical growth systems. From campaign planning to implementation.
           </motion.p>
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
             <a
