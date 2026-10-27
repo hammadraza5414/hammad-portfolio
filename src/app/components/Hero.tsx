@@ -5,7 +5,7 @@ import { Icon, SectionLabel } from "./ui";
 import { Icons, fadeUp, stagger } from "../lib/data";
 import AudioCard from "./AudioCard";
 
-const roles = ["Full-Stack Developer", "Systems & Deliverability", "Automation Engineer", "CMO @ Roxyel"];
+const roles = ["Digital Marketing Strategist", "Paid Media & Search", "Growth Systems & Automation", "WordPress & Web Development"];
 
 export default function Hero() {
   const [i, setI] = useState(0);
@@ -20,10 +20,10 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16 items-center">
         <motion.div initial="hidden" animate="show" variants={stagger}>
           <motion.div variants={fadeUp} className="mb-6">
-            <SectionLabel>Available for select work</SectionLabel>
+            <SectionLabel>Digital marketing · Growth strategy · Web systems</SectionLabel>
           </motion.div>
           <motion.h1 variants={fadeUp} className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold tighter leading-[0.95] mb-6">
-            Hi, I&apos;m <span className="inline-block">Hammad</span>
+            Ideas into <span className="inline-block">impact</span>
             <span className="text-crimson">.</span>
           </motion.h1>
           <motion.div variants={fadeUp} className="h-8 mb-6 overflow-hidden">
@@ -41,14 +41,14 @@ export default function Hero() {
             </AnimatePresence>
           </motion.div>
           <motion.p variants={fadeUp} className="text-neutral-400 text-lg max-w-xl mb-10 leading-relaxed">
-            I design and ship the boring-but-critical layer between marketing intent and revenue — funnels, automations, and outbound systems that actually deliver.
+            I connect paid advertising, search strategy, websites, CRM automation, and B2B outreach into practical growth systems. From campaign planning to implementation.
           </motion.p>
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
             <a
               href="#projects"
               className="inline-flex items-center gap-2 bg-crimson text-white font-semibold px-6 py-3.5 rounded-full hover:bg-red-500 transition-all hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(255,46,46,0.45)]"
             >
-              View My Work <Icon path={Icons.arrow} className="w-4 h-4" />
+              Explore selected work <Icon path={Icons.arrow} className="w-4 h-4" />
             </a>
             <a
               href="#contact"

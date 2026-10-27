@@ -8,9 +8,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Hammad — Systems & Deliverability",
+  title: "Hammad Raza — Digital Marketing & Growth Strategy",
   description:
-    "Funnels, automations, and outbound systems that actually deliver.",
+    "Digital marketing, Google and Meta Ads, search visibility, WordPress and growth automation.",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jakarta.className} bg-obsidian text-white`}>
+      <body className={`${jakarta.className} editorial-site`}>
         {children}
       </body>
     </html>

@@ -1,4 +1,4 @@
-export const NAV = ["Home", "About", "Skills", "Projects", "Experience", "Contact"];
+export const NAV = ["Home", "About", "Skills", "Projects", "Growth", "Experience", "Contact"];
 
 export const Icons = {
   menu: "M4 6h16M4 12h16M4 18h16",
@@ -28,6 +28,9 @@ export const PROCESS = [
 ];
 
 export const SKILL_GROUPS = [
+  { title: "Performance Advertising", subtitle: "Campaigns from setup to analysis", items: ["Google Ads", "Meta Ads", "LinkedIn Ads", "Audience Research", "Campaign Reporting", "Conversion Tracking"] },
+  { title: "Organic & AI Search", subtitle: "Search visibility work in progress", items: ["Technical SEO", "On-page SEO", "AEO", "GEO", "Keyword Research", "Content Structure"] },
+  { title: "Web & Client Delivery", subtitle: "Building and maintaining the digital foundation", items: ["WordPress", "Website Maintenance", "Webinar Delivery", "Landing Pages", "Analytics", "Web Development"] },
   {
     title: "Marketing Systems",
     subtitle: "The core stack I ship with",
