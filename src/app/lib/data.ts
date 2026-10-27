@@ -59,7 +59,7 @@ export const PROJECTS = [
     title: "AI Conversation & Voice Agents",
     tags: ["GoHighLevel", "Conversation AI", "Voice AI", "CRM Automation"],
     desc: "Built conversational and voice-based AI agent workflows that handle inquiries from advertising campaigns, website visitors and inbound callers. The agents can qualify prospects, capture and save lead details in a CRM, answer common questions, route conversations to a person and support appointment booking. Client identity withheld.",
-    image: "/projects/ai-agents-anonymized.svg",
+    image: "/projects/GHL_AI_Conversation_Workflow_Confidential_Redacted.png",
     highlights: ["Lead capture from ads, website inquiries and calls", "CRM contact storage + qualification", "Appointment scheduling + human handoff"],
   },
   {
