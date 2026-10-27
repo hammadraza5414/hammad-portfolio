@@ -33,18 +33,18 @@ export default function GrowthShowcase() {
  const reduce = useReducedMotion();
  const filtered = works.filter(p=>active==="All"||p.category===active);
  return <section id="growth" className="relative overflow-hidden border-t border-white/10 py-24 lg:py-36">
-  <div className="pointer-events-none absolute top-0 right-0 h-[520px] w-[520px] rounded-full bg-[#B5CDA0]/[.06] blur-[110px]" />
+  <div className="pointer-events-none absolute top-0 right-0 h-[520px] w-[520px] rounded-full bg-[#566b50]/[.06] blur-[110px]" />
   <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
    <motion.div initial={{opacity:0,y:40}} whileInView={{opacity:1,y:0}} transition={{duration:.7}} viewport={{once:true}} className="max-w-4xl">
-    <p className="mb-5 text-xs font-bold tracking-[.3em] text-[#B5CDA0] uppercase">Expanded practice / selected work</p>
+    <p className="mb-5 text-xs font-bold tracking-[.3em] text-[#566b50] uppercase">Expanded practice / selected work</p>
     <h2 className="text-5xl md:text-7xl xl:text-8xl font-black leading-[.95] tracking-[-.06em]">Strategy meets <span className="text-[#B5CDA0]">execution.</span></h2>
     <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-400">Paid media, search visibility, websites and growth systems. Every example is labeled to distinguish actual campaign evidence, work in progress and confidential client engagements.</p>
    </motion.div>
    <div className="mt-11 mb-9 flex flex-wrap gap-2" aria-label="Filter selected work">
-    {categories.map(c=><button type="button" key={c} onClick={()=>setActive(c)} aria-pressed={active===c} className={"rounded-full border px-5 py-2.5 text-sm transition-all "+(active===c?"border-[#B5CDA0] bg-[#B5CDA0] text-[#101512]":"border-neutral-700 text-neutral-300 hover:border-neutral-400")}>{c}</button>)}
+    {categories.map(c=><button type="button" key={c} onClick={()=>setActive(c)} aria-pressed={active===c} className={"rounded-full border px-5 py-2.5 text-sm transition-all "+(active===c?"border-[#566b50] bg-[#B5CDA0] text-white":"border-neutral-700 text-neutral-300 hover:border-neutral-400")}>{c}</button>)}
    </div>
    <motion.div layout={!reduce} className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-    <AnimatePresence mode="popLayout">{filtered.map((item,index)=><motion.article key={item.title} layout={!reduce} initial={reduce?false:{opacity:0,y:24,scale:.98}} animate={{opacity:1,y:0,scale:1}} exit={reduce?undefined:{opacity:0,y:-12}} transition={{duration:.38}} whileHover={reduce?undefined:{y:-5}} className="group flex flex-col rounded-2xl border border-white/10 bg-[#101416] p-4 hover:border-[#B5CDA0]/60">
+    <AnimatePresence mode="popLayout">{filtered.map((item,index)=><motion.article key={item.title} layout={!reduce} initial={reduce?false:{opacity:0,y:24,scale:.98}} animate={{opacity:1,y:0,scale:1}} exit={reduce?undefined:{opacity:0,y:-12}} transition={{duration:.38}} whileHover={reduce?undefined:{y:-5}} className="group flex flex-col rounded-2xl border border-white/10 bg-[#fffcf6] p-4 hover:border-[#566b50]/60">
      <ConceptVisual item={item} index={works.indexOf(item)}/>
      <div className="px-2 pb-3 pt-7 flex-1 flex flex-col">
       <div className="flex justify-between gap-3 items-center mb-3"><span className="text-[10px] uppercase tracking-[.2em] text-[#B5CDA0]">{item.eyebrow}</span>{item.state&&<span className="rounded-full border border-white/15 px-2.5 py-1 text-[10px] text-neutral-300">{item.state}</span>}</div>
