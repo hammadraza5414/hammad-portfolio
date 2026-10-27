@@ -47,6 +47,7 @@ export default function Projects() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={p.image}
+                    onError={(e) => { if (p.title === "AI Conversation & Voice Agents" && !e.currentTarget.src.endsWith("/projects/ai-agents-anonymized.svg")) e.currentTarget.src = "/projects/ai-agents-anonymized.svg"; }}
                     alt={p.title}
                     className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
                     loading="lazy"
