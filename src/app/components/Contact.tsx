@@ -43,7 +43,10 @@ export default function Contact() {
         });
         if (!res.ok) throw new Error("Submit failed");
       } else {
-        await new Promise((r) => setTimeout(r, 900));
+        const subject = encodeURIComponent(`Portfolio inquiry from ${form.firstName} ${form.lastName}`);
+        const body = encodeURIComponent(`${form.message}\n\nFrom: ${form.firstName} ${form.lastName}\nReply to: ${form.email}`);
+        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+        return;
       }
       setSent(true);
       setForm(EMPTY);
