@@ -32,6 +32,8 @@ export const SKILL_GROUPS = [
   { title: "Organic & AI Search", subtitle: "Search visibility work in progress", items: ["Technical SEO", "On-page SEO", "AEO", "GEO", "Keyword Research", "Content Structure"] },
   { title: "Web & Client Delivery", subtitle: "Building and maintaining the digital foundation", items: ["WordPress", "Website Maintenance", "Webinar Delivery", "Landing Pages", "Analytics", "Web Development"] },
   {
+    title: "AI Agents & Automation", subtitle: "Conversations, voice and CRM workflows", items: ["Conversation AI", "Voice AI", "AI Lead Qualification", "CRM Data Capture", "Appointment Booking", "Human Handoff"] },
+  {
     title: "Marketing Systems",
     subtitle: "The core stack I ship with",
     items: ["GoHighLevel", "Funnels", "CRM Pipelines", "Automations", "Landing Pages", "SMS / Email Nurture"],
@@ -53,6 +55,13 @@ export const SOFT_SKILLS = ["Leadership", "Problem Solving", "Communication", "T
 // PROJECTS — real work, no fabricated metrics.
 // Each project has an `image` path pointing to /public/projects/*.png
 export const PROJECTS = [
+  {
+    title: "AI Conversation & Voice Agents",
+    tags: ["GoHighLevel", "Conversation AI", "Voice AI", "CRM Automation"],
+    desc: "Built conversational and voice-based AI agent workflows that handle inquiries from advertising campaigns, website visitors and inbound callers. The agents can qualify prospects, capture and save lead details in a CRM, answer common questions, route conversations to a person and support appointment booking. Client identity withheld.",
+    image: "/projects/ai-agents-anonymized.svg",
+    highlights: ["Lead capture from ads, website inquiries and calls", "CRM contact storage + qualification", "Appointment scheduling + human handoff"],
+  },
   {
     title: "GHL Funnel",
     tags: ["GoHighLevel", "Funnel Build", "Lead Capture"],
