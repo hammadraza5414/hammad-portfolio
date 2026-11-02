@@ -51,7 +51,7 @@ export default function GrowthShowcase() {
       <h3 className="text-2xl font-bold tracking-tight">{item.title}</h3>
       <p className="mt-3 flex-1 text-sm leading-7 text-neutral-400">{item.description}</p>
       {item.sampleMetrics ? <div className="my-5 border-t border-[#d9ddd2] pt-4">
-       <div className="mb-3 flex items-center gap-2"><span className="rounded-sm bg-[#e4ebde] px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-[#496149]">Demo data · illustrative only</span></div>
+       
        <div className="grid grid-cols-3 gap-2">{item.sampleMetrics.map(([value,label])=><div key={label} className="rounded-md bg-[#f1f2e9] p-2.5"><div className="font-serif text-xl text-[#2f4332]">{value}</div><div className="mt-1 text-[10px] uppercase tracking-wide text-[#667267]">{label}</div></div>)}</div>
        <p className="mt-2 text-[11px] text-[#667267]">{item.proof}. These figures are mockups, not client results.</p>
       </div> : <p className="my-5 border-t border-[#d9ddd2] pt-4 text-sm font-semibold text-[#526b54]">{item.proof}</p>}
