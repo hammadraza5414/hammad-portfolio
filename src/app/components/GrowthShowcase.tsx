@@ -53,7 +53,7 @@ export default function GrowthShowcase() {
       {item.sampleMetrics ? <div className="my-5 border-t border-[#d9ddd2] pt-4">
        
        <div className="grid grid-cols-3 gap-2">{item.sampleMetrics.map(([value,label])=><div key={label} className="rounded-md bg-[#f1f2e9] p-2.5"><div className="font-serif text-xl text-[#2f4332]">{value}</div><div className="mt-1 text-[10px] uppercase tracking-wide text-[#667267]">{label}</div></div>)}</div>
-       <p className="mt-2 text-[11px] text-[#667267]">{item.proof}. These figures are mockups, not client results.</p>
+       <span className="mt-2 block text-[11px] text-[#667267]">Sample metrics</span>
       </div> : <p className="my-5 border-t border-[#d9ddd2] pt-4 text-sm font-semibold text-[#526b54]">{item.proof}</p>}
       <div className="flex flex-wrap gap-2">{item.tags.map(t=><span key={t} className="rounded-md bg-white/5 px-2.5 py-1 text-xs text-neutral-300">{t}</span>)}</div>
      </div>
